@@ -10,6 +10,6 @@ public class HelloController {
     @RequestMapping("/hello")
     @ResponseBody
     public String helloWorld() {
-        return "Hello world from Spring Boot (on AWS)";
+        return "Hello world from Spring Boot (on AWS). System properties: " + System.getProperties();
     }
 }
