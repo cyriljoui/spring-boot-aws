@@ -2,7 +2,6 @@ package com.cyriljoui.spring.poc.springbootaws.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.io.Serializable;
 
@@ -15,7 +14,7 @@ public class Customer implements Serializable {
     @GeneratedValue(strategy = AUTO)
     private Long id;
 
-    private String fisrtname;
+    private String firstname;
 
     private String lastname;
 
@@ -30,12 +29,12 @@ public class Customer implements Serializable {
         this.id = id;
     }
 
-    public String getFisrtname() {
-        return fisrtname;
+    public String getFirstname() {
+        return firstname;
     }
 
-    public void setFisrtname(String fisrtname) {
-        this.fisrtname = fisrtname;
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 
     public String getLastname() {
