@@ -2,10 +2,12 @@ package com.cyriljoui.spring.poc.springbootaws;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.PropertySources;
 
 @SpringBootApplication
-//@EnableRdsInstance(databaseName = "ebdb", dbInstanceIdentifier = "aa4h8yjva50slh", username = "pocdbuser", password = "pocdbuser")
-//@EnableContextCredentials(accessKey = "", secretKey = "")
+@PropertySources({@PropertySource(value = "application-dev.properties", ignoreResourceNotFound = true),
+        @PropertySource(value = "application-dev-local.properties", ignoreResourceNotFound = true)})
 public class Application {
 
     public static void main(String[] args) {
