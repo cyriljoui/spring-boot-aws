@@ -22,7 +22,6 @@
         <java.version>1.8</java.version>
         <spring-cloud-version>1.0.3.RELEASE</spring-cloud-version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <start-class>demo.SpringBootAwsApplication</start-class>
     </properties>
 
     <dependencies>
@@ -58,6 +57,7 @@
             <artifactId>spring-boot-starter-remote-shell</artifactId>
         </dependency>
         -->
+        <!-- Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -67,6 +67,14 @@
             <artifactId>spring-boot-starter-tomcat</artifactId>
             <scope>provided</scope>
         </dependency>
+
+        <!-- Messaging -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+
+        <!-- Test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
